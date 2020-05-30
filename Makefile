@@ -7,3 +7,5 @@ down:
 
 restart: down start
 
+install:
+	docker-compose run -rm vue npm install
