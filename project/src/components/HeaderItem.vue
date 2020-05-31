@@ -1,7 +1,6 @@
 <template>
-  <header id="header">
-    <h1>This is the header.</h1>
-    <nav id="header-nav">
+  <header>
+    <nav>
       <ul>
         <router-link tag="li" id="home-nav" to="/" exact><a>ホーム</a></router-link>
         <router-link tag="li" id="game-nav" to="/game"><a>ゲーム</a></router-link>
@@ -11,7 +10,7 @@
     </nav>
   </header>
 </template>
-<!-- style中身は省略 -->
+  <!-- style中身は省略 -->
 <style scoped>
 </style>
 
