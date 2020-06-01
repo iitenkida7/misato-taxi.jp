@@ -18,16 +18,19 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - uses: actions/checkout@v2
+  
     - uses: actions/setup-node@v1
       with:
         node-version: 10.x
         registry-url: 'https://registry.npmjs.org'
+ 
     - name: setup Node
       working-directory: project
       run: npm install
 
-    - name: Run a one-line script
+    - uses: actions/checkout@v2
+    
+    - name: build
       working-directory: project
       run: | 
         npm run build
