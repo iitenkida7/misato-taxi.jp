@@ -30,6 +30,6 @@ jobs:
     - name: Run a one-line script
       working-directory: project
       run: | 
-        npm run
+        npm run build
         find ./public
         
