@@ -24,6 +24,7 @@ jobs:
         node-version: 10.x
         registry-url: 'https://registry.npmjs.org'
     - name: setup Node
+      working-directory: project
       run: npm install
 
     - name: Run a one-line script
