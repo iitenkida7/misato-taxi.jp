@@ -1,39 +1,29 @@
 <template>
   <div id="app">
     <HeaderItem />
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <button @click="view1">コンテンツ１</button>
-    <button @click="view2">コンテンツ ２</button>
-    <component :is="currentView"></component>
+    <TopPage />
   </div>
 </template>
 
 <script>
 import HeaderItem from './components/HeaderItem.vue'
-import HelloWorld from './components/HelloWorld.vue'
-import Contents1 from './components/Contents1.vue'
-import Contents2 from './components/Contents2.vue'
+import TopPage from './components/TopPage.vue'
+//import HelloWorld from './components/HelloWorld.vue'
+
+//import Contents2 from './components/Contents2.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+//    HelloWorld,
     HeaderItem,
-    Contents1,
-    Contents2
+    TopPage,
+  //  Contents2
   },
   data() {
     return { 
-     currentView: 'Contents1' 
+     currentView: 'TopPage' 
   }
-  },
-  methods: {
-    view1() {
-      this.currentView = "Contents1"
-    },
-    view2() {
-      this.currentView = "Contents2"
-    }
   }
 }
 </script>

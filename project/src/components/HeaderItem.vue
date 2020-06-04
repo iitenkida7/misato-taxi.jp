@@ -1,14 +1,12 @@
 <template>
-  <header>
-    <nav>
-      <ul>
-        <router-link tag="li" id="home-nav" to="/" exact><a>ホーム</a></router-link>
-        <router-link tag="li" id="game-nav" to="/game"><a>ゲーム</a></router-link>
-        <router-link tag="li" id="info-nav" to="/info"><a>情報</a></router-link>
-        <router-link tag="li" id="gift-nav" to="/gift"><a>お土産</a></router-link>
-      </ul>
-    </nav>
-  </header>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="./index.html">トップ</a>
+          <a class="brand" href="./ir.html">会社概要</a>
+          <a class="brand" href="./recruit.html">求人</a></div>
+      </div>
+    </div>
 </template>
   <!-- style中身は省略 -->
 <style scoped>
