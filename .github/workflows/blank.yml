@@ -24,11 +24,12 @@ jobs:
         node-version: 10.x
         registry-url: 'https://registry.npmjs.org'
  
+    - uses: actions/checkout@v2
+
     - name: setup Node
       working-directory: ./project
       run: npm install
         
-    - uses: actions/checkout@v2
     
     - name: build
       working-directory: ./project
