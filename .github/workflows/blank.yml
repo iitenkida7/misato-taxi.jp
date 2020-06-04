@@ -25,9 +25,11 @@ jobs:
         registry-url: 'https://registry.npmjs.org'
  
     - name: setup Node
-      working-directory: ./project
-      run: npm install
-
+      #working-directory: ./project
+      run: |
+        pwd
+         npm install
+        
     - uses: actions/checkout@v2
     
     - name: build
