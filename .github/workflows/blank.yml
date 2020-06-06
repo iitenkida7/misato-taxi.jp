@@ -36,14 +36,6 @@ jobs:
         npm run build
         find ./public
 
-    - uses: actions/aws/cli@master
-            actions/aws/cli@master
-      env:
-        AWS_ACCESS_KEY_ID: 
-        AWS_SECRET_ACCESS_KEY: 
-      with:
-
-
     - name: aws cli setting
       uses: aws-actions/configure-aws-credentials@v1
       with:
