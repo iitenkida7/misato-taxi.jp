@@ -3,7 +3,7 @@
       <div class="row">
         <div class="col-md-1 text-center">
           <h1 style="font-size:18px">(有)三郷交通</h1>
-          <img style="max-width: 260px; height: auto; margin:auto;display: block" src="@/assets/img/emblem_small.gif">
+          <img style="max-width: 260px; height: auto; margin:auto;display: block" src="@/assets/img/emblem.png">
           <a class="btn pull-center btn-large btn-primary" style="margin: 20px;" v-on:click="gaEventTel" href="tel:048-952-3310">048-952-
             <ruby>
               <rb>3310</rb>
