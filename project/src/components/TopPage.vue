@@ -23,6 +23,11 @@
 
 <script>
 export default {
-  name: 'TopPage'
+  name: 'TopPage',
+    methods: {
+      gaEventTel() {
+        this.$ga.event('tel', 'misato-taxi', 'call', 1)
+      }
+    }
 }
 </script>
