@@ -13,3 +13,6 @@ install:
 
 logs:
 	docker-compose logs -f
+
+test:
+	docker-compose run --rm vue npm test
