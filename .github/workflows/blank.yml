@@ -45,4 +45,4 @@ jobs:
 
     - name: Deploy to S3
       run: |
-        s3 sync ./project/dist/ s3://${{ secrets.S3_BUCKET_NAME }} --delete
+        aws s3 sync ./project/dist/ s3://${{ secrets.S3_BUCKET_NAME }} --delete
