@@ -20,9 +20,6 @@
     </div>
     </div>
 </template>
-<!-- style中身は省略 -->
-<style scoped>
-</style>
 
 <script>
 export default {
