@@ -37,8 +37,20 @@ jobs:
         find ./public
 
     - uses: actions/aws/cli@master
+            actions/aws/cli@master
       env:
-        AWS_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_ACCESS_KEY }}
+        AWS_ACCESS_KEY_ID: 
+        AWS_SECRET_ACCESS_KEY: 
       with:
-        args: s3 sync ./project/dist/ s3://${{ secrets.S3_BUCKET_NAME }} --delete
+
+
+    - name: aws cli setting
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.S3_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.S3_SECRET_ACCESS_KEY }}
+        aws-region:  northeast-1a
+
+    - name: Deploy to S3
+      run: |
+        s3 sync ./project/dist/ s3://${{ secrets.S3_BUCKET_NAME }} --delete
