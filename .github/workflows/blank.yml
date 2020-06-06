@@ -28,12 +28,18 @@ jobs:
 
     - name: setup Node
       working-directory: ./project
-      run: npm install
-        
+      run: npm install  
     
     - name: build
       working-directory: ./project
       run: | 
         npm run build
         find ./public
-        
+
+    - uses: actions/aws/cli@master
+      working-directory: ./project
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_ACCESS_KEY }}
+      with:
+        args: s3 sync dist/ s3://${{ secrets.S3_BUCKET_NAME }} --delete
