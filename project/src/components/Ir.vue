@@ -18,7 +18,7 @@
             </tr>
             <tr>
               <td>URL</td>
-              <td>http://misato-taxi.jp</td>
+              <td>http://misato-taxi.jp/</td>
             </tr>
             <tr>
               <td>事業内容</td>
