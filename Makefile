@@ -16,3 +16,6 @@ logs:
 
 test:
 	docker-compose run --rm vue npm test
+
+build:
+	docker-compose run --rm vue npm run build
