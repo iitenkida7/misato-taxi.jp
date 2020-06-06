@@ -3,8 +3,8 @@
       <div class="navbar-inner">
         <div class="container">
           <router-link class="brand" to="/">トップ</router-link>
-          <router-link class="brand" to="Ir">会社概要</router-link>
-          <router-link class="brand" to="Ir">求人</router-link>
+          <router-link class="brand" to="ir">会社概要</router-link>
+          <router-link class="brand" to="recruit">求人</router-link>
         </div>
       </div>
     </div>

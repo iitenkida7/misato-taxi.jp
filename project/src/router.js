@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 // ルート用のコンポーネントを読み込む
 import TopPage from './components/TopPage.vue'
 import Ir from './components/Ir.vue'
+import Recruit from './components/Recruit.vue'
 
 // Vuexと同様で最初にプラグインとして登録
 Vue.use(VueRouter)
@@ -18,6 +19,10 @@ const router = new VueRouter({
     {
       path: '/Ir',
       component: Ir
+    },
+    {
+      path: '/recruit',
+      component: Recruit
     }
   ]
 })
