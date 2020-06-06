@@ -14,7 +14,7 @@
           <hr>
           <div class="infomation" style="height: 100px; vertical-align: text-top; text-align: left">   
             <h3 style="font-size: 14px ;background-color: MistyRose">お知らせ</h3>
-            <li><a href="./recruit.html">タクシードライバー大募集</a></li>
+            <li> <router-link class="brand" to="recruit">タクシードライバー大募集</router-link></li>
           </div>
         </div>
     </div>
