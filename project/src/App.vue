@@ -1,22 +1,19 @@
 <template>
   <div id="app">
     <HeaderItem />
-    <TopPage />
+    <router-view />
   </div>
 </template>
 
 <script>
 import HeaderItem from './components/HeaderItem.vue'
-import TopPage from './components/TopPage.vue'
 
 export default {
   name: 'App',
   components: {
     HeaderItem,
-    TopPage,
   },
   }
-
 </script>
 
 <style>
