@@ -2,7 +2,7 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <router-link class="brand" to="TopPage">トップ</router-link>
+          <router-link class="brand" to="/">トップ</router-link>
           <router-link class="brand" to="Ir">会社概要</router-link>
           <router-link class="brand" to="Ir">求人</router-link>
         </div>
