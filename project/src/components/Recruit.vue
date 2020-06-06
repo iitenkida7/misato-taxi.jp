@@ -4,7 +4,7 @@
         <h2>求人</h2>
         <hr>
         <h3 style="font-size:23px ; background-color:#81DAF5">タクシードライバー大募集</h3>
-        <p style="font-size:18px">全車カーナビ付（経験不問）</p><img src="@/assets/img/body2.jpg">
+        <p style="font-size:18px">全車カーナビ付（経験不問）</p><img src="@/assets/img/taxi.jpg">
         <h4>【仕事の概要】</h4>
         <li>地域密着のタクシー会社でのドライバー</li>
         <h4>【月給】</h4>
