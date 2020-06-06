@@ -2,11 +2,14 @@
     <div class="container">
       <div class="row">
         <div class="col-md-1 text-center">
-          <h1 style="font-size:18px">(有)三郷交通</h1><img style="max-width: 260px; height: auto; margin:auto;display: block" src="images/emblem_small.gif"><a class="btn pull-center btn-large btn-primary" style="margin: 20px;" href="tel:048-952-3310">048-952-
+          <h1 style="font-size:18px">(有)三郷交通</h1>
+          <img style="max-width: 260px; height: auto; margin:auto;display: block" src="images/emblem_small.gif">
+          <a class="btn pull-center btn-large btn-primary" style="margin: 20px;" v-on:click="gaEventTel" href="tel:048-952-3310">048-952-
             <ruby>
               <rb>3310</rb>
               <rt>みさと</rt>
-            </ruby></a>
+            </ruby>
+          </a>
           <p style="font-weight: bold">タクシー呼び出し可能エリア:埼玉県三郷市</p>
           <hr>
           <div class="infomation" style="height: 100px; vertical-align: text-top; text-align: left">   
