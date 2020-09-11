@@ -19,3 +19,6 @@ test:
 
 build:
 	docker-compose run --rm vue npm run build
+
+serve:
+	docker-compose run --rm vue npm run serve
