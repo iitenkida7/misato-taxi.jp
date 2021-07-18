@@ -12,19 +12,27 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'nuxt',
+    title: '三郷交通',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ja'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
+      { name: 'description', content: "埼玉県三郷市でタクシー呼ぶ。TEL:048-952-3310 三郷駅、三郷中央駅、新三郷、ららぽーと、病院などどこへでも。"},
+      { name: "keywords", content: "三郷,タクシー,三郷タクシー,三郷交通,三郷駅,求人"},
+      { name: "author", content: "misato-taxi"},
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'},
+    ],
+    script: [
+      { src: 'https://code.jquery.com/jquery-3.5.1.slim.min.js'},
+      { src: 'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'},
+      { src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js'},
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

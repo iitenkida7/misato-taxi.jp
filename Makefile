@@ -1,13 +1,13 @@
 
+restart: 
+	@make down
+	@make up
+
 up:
 	docker-compose up -d
 
 down:
 	docker-compose down
-
-restart: 
-	@down
-	@start
 
 install:
 	docker-compose build

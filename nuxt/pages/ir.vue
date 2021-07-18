@@ -1,6 +1,5 @@
 <template>
  <div>
-    <Head />
     <Header />
   <main role="main" class="container">
     <div class="row justify-content-sm-center">

@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Head />
     <Header />
     <main role="main" class="container">
       <div class="row justify-content-sm-center">
@@ -42,6 +41,5 @@ export default {
       this.$ga.event("tel", "misato-taxi", "call", 1);
     }
   },
-  title: "三郷交通"
 };
 </script>
