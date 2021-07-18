@@ -1,0 +1,46 @@
+
+
+a {
+  text-decoration: none;
+}
+
+body {
+  padding-top: 60px;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+div#wrapper {
+  width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  border: 1px solid #ff0000;
+}
+
+@media (min-width: 980px) {
+  body {
+    margin-top: 41px;
+  }
+}
+
+.btn {
+  margin: 20px;
+  max-width: 260px;
+}
+
+p {
+  font-weight: bold;
+  text-align: center;
+}
+
+.infomation {
+  font-size: 14px;
+  vertical-align: text-top;
+  text-align: left;
+}
+
+h3 {
+  font-size: 20px;
+  background-color: MistyRose;
+}

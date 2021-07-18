@@ -76,16 +76,3 @@
   </main>
  </div>
 </template>
-
-<style scoped>
-h3 {
-font-size:23px ;
- background-color:#81DAF5
-}
-</style>
-
-<script>
-export default {
-  name: "Recruit"
-};
-</script>

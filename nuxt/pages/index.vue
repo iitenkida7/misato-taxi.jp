@@ -23,9 +23,7 @@
             <div class="infomation">
               <h3>お知らせ</h3>
               <li>
-                <router-link class="brand" to="recruit"
-                  >タクシードライバー大募集</router-link
-                >
+                <NuxtLink class="brand" to="recruit">タクシードライバー大募集</NuxtLink>
               </li>
             </div>
           </div>
@@ -36,28 +34,6 @@
   </div>
 </template>
 
-<style scoped>
-.btn {
-  margin: 20px;
-  max-width: 260px;
-}
-
-p {
-  font-weight: bold;
-  text-align: center;
-}
-.infomation {
-  font-size: 14px;
-  vertical-align: text-top;
-  text-align: left;
-}
-
-h3 {
-  font-size: 20px;
-  background-color: MistyRose;
-}
-</style>
-
 <script>
 export default {
   name: "index",
@@ -66,7 +42,6 @@ export default {
       this.$ga.event("tel", "misato-taxi", "call", 1);
     }
   },
-  title: "三郷交通",
-
+  title: "三郷交通"
 };
 </script>
