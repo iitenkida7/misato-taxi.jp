@@ -1,24 +1,21 @@
 
-start:
+up:
 	docker-compose up -d
 
 down:
 	docker-compose down
 
-restart: down start
+restart: 
+	@down
+	@start
 
 install:
 	docker-compose build
-	docker-compose run --rm node npm install
+	docker-compose run --rm node yarn install
 
 logs:
 	docker-compose logs -f
 
-test:
-	docker-compose run --rm node npm test
+generate:
+	docker-compose run --rm node yarn generate
 
-build:
-	docker-compose run --rm node npm run build
-
-serve:
-	docker-compose run --rm node npm run serve
