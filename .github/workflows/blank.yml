@@ -26,7 +26,7 @@ jobs:
       working-directory: ./nuxt
       run: | 
         yarn generate
-        find ./nuxt/dist
+        find ./dist
 
     - name: aws cli setting
       uses: aws-actions/configure-aws-credentials@v1
