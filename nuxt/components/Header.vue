@@ -1,47 +1,23 @@
 <template>
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <router-link class="brand font-weight-bold" to="/">三郷交通</router-link>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <NuxtLink class="navbar-brand" to="/">三郷交通</NuxtLink>
     <button
       class="navbar-toggler"
       type="button"
       data-toggle="collapse"
-      data-target="#navbarsExampleDefault"
-      aria-controls="navbarsExampleDefault"
+      data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <ul class="navbar-nav mr-auto justify-content-center">
-        <li class="nav-item active">
-          <NuxtLink class="brand" to="/">トップ</NuxtLink>
-        </li>
-        <li class="nav-item">
-          <NuxtLink class="brand" to="ir">会社概要</NuxtLink>
-        </li>
-        <li class="nav-item">
-          <NuxtLink class="brand" to="recruit">求人</NuxtLink>
-        </li>
-      </ul>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <NuxtLink class="nav-link" to="/">タクシーを呼ぶ</NuxtLink>
+        <NuxtLink class="nav-link" to="ir">会社概要</NuxtLink>
+        <NuxtLink class="nav-link" to="recruit">求人</NuxtLink>
+      </div>
     </div>
   </nav>
 </template>
-
-<style scoped>
-a:link {
-  color: #ffffff;
-}
-
-a:visited {
-  color: #ffffff;
-}
-
-a:hover {
-  color: #ffffff;
-}
-
-a:active {
-  color: #ffffff;
-}
-</style>

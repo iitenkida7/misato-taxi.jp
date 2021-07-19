@@ -59,17 +59,7 @@
           やる気があればOK
           <br />親切丁寧にサポートします！まずはお電話を！
         </p>
-        <a
-          class="rounded mx-auto d-block btn btn-primary btn-lg"
-          v-on:click="gaEventTel"
-          href="tel:048-952-3310"
-        >
-          048-952-
-          <ruby>
-            <rb>3310</rb>
-            <rt>みさと</rt>
-          </ruby>
-        </a>
+        <TelBottun />
       </div>
     </div>
   </main>

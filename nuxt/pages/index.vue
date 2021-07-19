@@ -5,24 +5,16 @@
       <div class="row justify-content-sm-center">
         <div class="col-sm mx-auto rounded mx-auto d-block">
           <img class="rounded mx-auto d-block" src="/image/emblem.png" />
-          <a
-            class="rounded mx-auto d-block btn btn-primary btn-lg"
-            @click="gaEventTel"
-            href="tel:048-952-3310"
-          >
-            048-952-
-            <ruby>
-              <rb>3310</rb>
-              <rt>みさと</rt>
-            </ruby>
-          </a>
+          <TelBottun />
           <div class="col-sm">
             <p>タクシー呼び出し可能エリア:埼玉県三郷市</p>
             <hr />
             <div class="infomation">
               <h3>お知らせ</h3>
               <li>
-                <NuxtLink class="brand" to="recruit">タクシードライバー大募集</NuxtLink>
+                <NuxtLink class="brand" to="recruit"
+                  >タクシードライバー大募集</NuxtLink
+                >
               </li>
             </div>
           </div>
@@ -35,8 +27,6 @@
 
 <script>
 export default {
-  name: "index",
-  methods: {
-  },
+  name: "index"
 };
 </script>
