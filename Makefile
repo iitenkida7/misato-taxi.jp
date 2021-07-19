@@ -19,3 +19,4 @@ logs:
 generate:
 	docker-compose run --rm node yarn generate
 
+
