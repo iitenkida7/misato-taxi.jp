@@ -25,13 +25,13 @@ jobs:
 
     - name: setup Node
       working-directory: ./project
-      run: npm install  
+      run: yarn install  
     
     - name: build
-      working-directory: ./project
+      working-directory: ./nuxt
       run: | 
-        npm run build
-        find ./public
+        yarn generate
+        find ./nuxt/dist
 
     - name: aws cli setting
       uses: aws-actions/configure-aws-credentials@v1
@@ -42,4 +42,4 @@ jobs:
 
     - name: Deploy to S3
       run: |
-        aws s3 sync ./project/dist/ s3://${{ secrets.S3_BUCKET_NAME }} --delete
+        aws s3 sync ./nuxt/dist/ s3://${{ secrets.S3_BUCKET_NAME }} --delete

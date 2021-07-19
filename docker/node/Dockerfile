@@ -1,7 +1,7 @@
 FROM node:lts-alpine
 
-RUN npm install  -g @vue/cli
+#RUN npm install  -g @vue/cli
 
-WORKDIR /project
-EXPOSE 8080
-CMD ["npm", "run", "serve"]
+WORKDIR /nuxt
+EXPOSE 3000
+CMD ["yarn", "dev"]
