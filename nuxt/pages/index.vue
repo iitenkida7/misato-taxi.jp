@@ -7,7 +7,7 @@
           <img class="rounded mx-auto d-block" src="/image/emblem.png" />
           <a
             class="rounded mx-auto d-block btn btn-primary btn-lg"
-            v-on:click="gaEventTel"
+            @click="gaEventTel"
             href="tel:048-952-3310"
           >
             048-952-
@@ -37,9 +37,6 @@
 export default {
   name: "index",
   methods: {
-    gaEventTel() {
-      this.$ga.event("tel", "misato-taxi", "call", 1);
-    }
   },
 };
 </script>
