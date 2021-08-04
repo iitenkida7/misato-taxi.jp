@@ -1,4 +1,4 @@
 # misato-taxi.jp
 
 ## CI/CD Status
-![CI](https://github.com/iitenkida7/misato-taxi.jp/workflows/CI/badge.svg?branch=master)
+[![Deploy](https://github.com/iitenkida7/misato-taxi.jp/actions/workflows/blank.yml/badge.svg)](https://github.com/iitenkida7/misato-taxi.jp/actions/workflows/blank.yml)
