@@ -11,17 +11,3 @@
     </ruby>
   </a>
 </template>
-
-<script>
-export default {
-  methods: {
-    gaEventTel() {
-      this.$gtag("event", "tel", {
-        event_category: "misato-taxi",
-        event_label: "call",
-        value: 1
-      });
-    }
-  }
-};
-</script>
