@@ -1,9 +1,5 @@
 <template>
-  <a
-    class="rounded mx-auto d-block btn btn-primary btn-lg"
-    @click="gaEventTel"
-    href="tel:048-952-3310"
-  >
+  <a class="rounded mx-auto d-block btn btn-primary btn-lg" href="tel:048-952-3310">
     048-952-
     <ruby>
       <rb>3310</rb>
