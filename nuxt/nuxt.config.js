@@ -55,15 +55,16 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/google-gtag',
+    '@nuxtjs/gtm',
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
 
-  'google-gtag': {
+  gtm: {
     id: 'GTM-MBND75W',
-    //debug: true, // Enable to track in dev mode.
-  },
+    pageTracking: true,
+    enabled: true
+  }
 }
