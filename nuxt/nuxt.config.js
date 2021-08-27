@@ -63,7 +63,7 @@ export default {
   },
 
   'google-gtag': {
-    id: 'UA-43152705-1',
+    id: 'GTM-MBND75W',
     debug: true, // Enable to track in dev mode.
   },
 }
