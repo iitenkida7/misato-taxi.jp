@@ -64,6 +64,6 @@ export default {
 
   'google-gtag': {
     id: 'GTM-MBND75W',
-    debug: true, // Enable to track in dev mode.
+    //debug: true, // Enable to track in dev mode.
   },
 }
