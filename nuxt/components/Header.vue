@@ -14,7 +14,8 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <NuxtLink class="nav-link" to="/">タクシーを呼ぶ</NuxtLink>
+        <a class="nav-link btn-tel" href="tel:048-952-3310">タクシーを呼ぶ（電話する）</a>
+        <NuxtLink class="nav-link" to="/">トップページ</NuxtLink>
         <NuxtLink class="nav-link" to="ir">会社概要</NuxtLink>
         <NuxtLink class="nav-link" to="recruit">求人</NuxtLink>
       </div>
