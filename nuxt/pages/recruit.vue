@@ -7,7 +7,7 @@
       <hr />
       <h3>タクシードライバー大募集</h3>
       <p>全車カーナビ付（経験不問）</p>
-      <img src="/image/taxi.jpg" />
+      <img class="img-fluid" src="/image/taxi.jpg" />
       <div class="text-center" style="height:30px"></div>
 
       <h4>【仕事の概要】</h4>
@@ -59,7 +59,10 @@
           やる気があればOK
           <br />親切丁寧にサポートします！まずはお電話を！
         </p>
-        <TelBottun />
+        <div class="text-center">
+  <a class="rounded mx-auto d-block btn btn-primary btn-lg btn-tel mb-0" href="tel:048-952-3310">電話する</a>
+  <a href="tel:048-952-3310">048-952-3310</a>
+</div>
       </div>
     </div>
   </main>

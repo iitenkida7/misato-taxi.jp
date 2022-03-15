@@ -1,9 +1,7 @@
 <template>
-  <a class="rounded mx-auto d-block btn btn-primary btn-lg btn-tel" href="tel:048-952-3310">
-    電話：048-952-
-    <ruby>
-      <rb>3310</rb>
-      <rt>みさと</rt>
-    </ruby>
-  </a>
-</template>
+<a class="text-center" href="tel:048-952-3310">
+  <p class="rounded mx-auto d-block btn btn-primary btn-lg btn-tel mb-0" >タクシーを呼ぶ</p>
+  <p >048-952-3310</p>
+
+</a>
+  </template>
