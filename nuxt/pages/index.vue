@@ -20,7 +20,7 @@
           <div class="mt-8 bg-black text-white p-4 rounded-lg shadow-lg">
             <a href="https://www.uber.com/jp/ja/ride/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center gap-1 hover:opacity-80 transition">
               <span class="font-bold text-sm">＼Uber Taxi サービス開始／</span>
-              <span class="font-bold text-lg">Uberタクシーで呼ぶ</span>
+              <span class="font-bold text-lg">Uberでタクシーを呼ぶ</span>
             </a>
           </div>
 
