@@ -5,11 +5,11 @@
         <NuxtLink class="flex items-center text-white font-bold text-lg" to="/">
           <span class="text-xs mr-1">有限会社</span>三郷交通
         </NuxtLink>
-        <div class="hidden md:flex space-x-6">
-          <a class="btn-tel text-white hover:bg-gray-700 px-3 py-2 rounded" href="tel:048-952-3310">タクシーを呼ぶ（電話）</a>
+        <div class="hidden md:flex space-x-6 items-center">
           <NuxtLink class="text-white hover:bg-gray-700 px-3 py-2 rounded" to="/">トップページ</NuxtLink>
           <NuxtLink class="text-white hover:bg-gray-700 px-3 py-2 rounded" to="ir">会社概要</NuxtLink>
           <NuxtLink class="text-white hover:bg-gray-700 px-3 py-2 rounded" to="recruit">求人</NuxtLink>
+          <a class="bg-sky-600 hover:bg-sky-700 text-white font-bold px-4 py-2 rounded-lg transition" href="tel:048-952-3310">タクシーを呼ぶ（電話）</a>
         </div>
         <!-- Mobile menu button -->
         <button class="md:hidden text-white" @click="mobileMenuOpen = !mobileMenuOpen">
@@ -20,10 +20,10 @@
       </div>
       <!-- Mobile menu -->
       <div v-if="mobileMenuOpen" class="md:hidden pb-4 space-y-2">
-        <a class="block btn-tel text-white hover:bg-gray-700 px-3 py-2 rounded" href="tel:048-952-3310">タクシーを呼ぶ（電話）</a>
         <NuxtLink class="block text-white hover:bg-gray-700 px-3 py-2 rounded" to="/">トップページ</NuxtLink>
         <NuxtLink class="block text-white hover:bg-gray-700 px-3 py-2 rounded" to="ir">会社概要</NuxtLink>
         <NuxtLink class="block text-white hover:bg-gray-700 px-3 py-2 rounded" to="recruit">求人</NuxtLink>
+        <a class="block bg-sky-600 hover:bg-sky-700 text-white font-bold px-4 py-2 rounded-lg transition" href="tel:048-952-3310">タクシーを呼ぶ（電話）</a>
       </div>
     </div>
   </nav>
