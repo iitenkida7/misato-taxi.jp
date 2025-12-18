@@ -4,10 +4,6 @@ export default {
     host: '0.0.0.0'
   },
 
-  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  //ssr: false,
-  mode: 'universal',
-
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
@@ -26,19 +22,13 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' },
       { rel: 'canonical', href: 'https://misato-taxi.jp/' },
-    ],
-    script: [
-      { src: 'https://code.jquery.com/jquery-3.5.1.slim.min.js' },
-      { src: 'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' },
-      { src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js' },
     ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '@/assets/css/style.css',
+    '@/assets/css/tailwind.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -60,6 +50,14 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    postcss: {
+      postcssOptions: {
+        plugins: {
+          tailwindcss: {},
+          autoprefixer: {},
+        },
+      },
+    },
   },
 
   gtm: {
