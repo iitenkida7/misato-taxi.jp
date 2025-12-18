@@ -1,6 +1,6 @@
 <template>
-  <a class="flex flex-col items-center" href="tel:048-952-3310">
-    <p class="rounded-lg bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 mb-0 text-center btn-tel">タクシーを呼ぶ</p>
-    <p class="mt-2 text-gray-700">048-952-3310</p>
+  <a class="rounded-lg bg-sky-600 hover:bg-sky-700 text-white font-bold py-4 px-8 text-center btn-tel w-full block" href="tel:048-952-3310">
+    <p class="text-sm mb-1">電話でタクシーを呼ぶ</p>
+    <p class="text-xl">048-952-3310</p>
   </a>
 </template>

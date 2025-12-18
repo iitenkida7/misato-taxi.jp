@@ -10,23 +10,27 @@
           <!-- Header Section -->
           <div class="mb-10">
             <h1 class="text-3xl font-bold text-center text-gray-900 mb-2">三郷交通</h1>
-            <p class="text-center text-lg text-gray-700">埼玉県三郷市でタクシーを呼ぶ</p>
+            <p class="text-center text-lg text-gray-700 mb-2">埼玉県三郷市でタクシーを呼ぶ</p>
+            <p class="text-center text-sm text-red-600 font-semibold">Uber Taxi はじめました！</p>
           </div>
 
           <TelBottun />
 
+          <!-- Uber Banner (2段) -->
+          <div class="mt-8 bg-black text-white p-4 rounded-lg shadow-lg">
+            <a href="https://www.uber.com/jp/ja/ride/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center gap-1 hover:opacity-80 transition">
+              <span class="font-bold text-sm">＼Uber Taxi サービス開始／</span>
+              <span class="font-bold text-lg">Uber で予約する</span>
+            </a>
+          </div>
+
           <div class="mt-8">
             <p class="text-center mt-8 mb-6">配車可能エリア: 埼玉県三郷市</p>
             <hr class="border-gray-300" />
-            <div class="infomation text-left mt-6">
-              <h3 class="font-bold mb-4 text-lg">お知らせ</h3>
-              <ul class="list-disc ml-6">
-                <li>
-                  <NuxtLink class="text-blue-600 hover:text-blue-800 underline" to="recruit"
-                    >タクシードライバー大募集</NuxtLink
-                  >
-                </li>
-              </ul>
+            <div class="text-center mt-6">
+              <NuxtLink class="text-blue-600 hover:text-blue-800 underline font-bold text-lg" to="recruit">
+                未経験OK！タクシードライバー募集中
+              </NuxtLink>
             </div>
           </div>
         </div>
