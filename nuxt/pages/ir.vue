@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <main role="main" class="pt-20 px-4 pb-8">
+    <main role="main" class="pt-10 px-4 pb-8">
       <div class="max-w-2xl mx-auto">
         <div class="text-center">
           <h1 class="text-2xl font-bold mb-6">会社概要</h1>

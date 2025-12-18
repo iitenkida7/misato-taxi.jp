@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <main role="main" class="pt-20 px-4 pb-12">
+    <main role="main" class="pt-10 px-4 pb-12">
       <div class="max-w-3xl mx-auto">
         <!-- Header Section with Background Image -->
         <div class="mb-10 relative h-64 rounded-lg overflow-hidden shadow-lg" style="background-image: url('/image/taxi.jpg'); background-size: cover; background-position: center;">
