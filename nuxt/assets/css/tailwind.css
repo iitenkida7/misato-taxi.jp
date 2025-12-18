@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for the project */
+@layer base {
+  a {
+    @apply no-underline;
+  }
+
+  body {
+    @apply pt-16 font-sans antialiased;
+  }
+
+  h1 {
+    @apply text-sm;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  p {
+    @apply text-center;
+  }
+}
+
+@layer components {
+  .btn-tel {
+    @apply rounded px-4 py-2;
+  }
+
+  .infomation {
+    @apply text-sm;
+  }
+}
+
+/* Media query overrides */
+@media (min-width: 980px) {
+  body {
+    @apply mt-10;
+  }
+}
