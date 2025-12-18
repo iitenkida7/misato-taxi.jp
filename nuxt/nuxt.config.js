@@ -17,7 +17,6 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'format-detection', content: 'telephone=no' },
-      { name: 'description', content: "埼玉県三郷市でタクシー呼ぶ / TEL:048-952-3310 配車可能エリア:埼玉県三郷市 / 三郷駅、三郷中央駅、新三郷、ららぽーと、病院などどこへでも 長距離もご相談ください" },
       { name: "author", content: "misato-taxi" },
     ],
     link: [

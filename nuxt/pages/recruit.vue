@@ -121,3 +121,23 @@
     </main>
   </div>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      title: 'タクシードライバー採用 | 三郷交通求人情報',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'タクシードライバー大募集中！埼玉県三郷市。女性乗務員大歓迎。経験不問。2種免許取得費用全額負担。月給25万円～。定年後の方も大歓迎。048-952-3310'
+        }
+      ],
+      link: [
+        { rel: 'canonical', href: 'https://misato-taxi.jp/recruit' }
+      ]
+    }
+  }
+};
+</script>

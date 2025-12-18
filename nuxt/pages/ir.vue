@@ -58,3 +58,23 @@
     </main>
   </div>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      title: '会社概要 | 三郷交通',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: '三郷交通の会社概要。埼玉県三郷市に拠点を置くタクシー会社。一般乗用旅客自動車運送事業を営んでいます。'
+        }
+      ],
+      link: [
+        { rel: 'canonical', href: 'https://misato-taxi.jp/ir' }
+      ]
+    }
+  }
+};
+</script>
