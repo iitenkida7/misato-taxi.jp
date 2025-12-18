@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <main role="main" class="pt-20 px-4 pb-12">
+    <main role="main" class="pt-10 px-4 pb-12">
       <div class="max-w-3xl mx-auto">
         <!-- Header Section with Background Image -->
         <div class="mb-10 relative h-64 rounded-lg overflow-hidden shadow-lg" style="background-image: url('/image/taxi.jpg'); background-size: cover; background-position: center;">
@@ -9,7 +9,7 @@
           <div class="absolute inset-0 bg-black bg-opacity-20"></div>
           <!-- Text content with background box -->
           <div class="relative h-full flex flex-col justify-center items-center">
-            <div class="bg-white bg-opacity-95 px-8 py-6 rounded-lg max-w-xl">
+            <div class="bg-white bg-opacity-95 px-4 sm:px-8 py-6 rounded-lg max-w-xl">
               <h1 class="text-4xl font-bold mb-4 text-center text-gray-900">タクシードライバー大募集</h1>
               <p class="text-center text-lg text-gray-700 font-semibold mb-2">経験不問・全車カーナビ付き</p>
               <p class="text-center font-bold text-lg text-gray-900">女性乗務員大歓迎！</p>
@@ -31,6 +31,7 @@
         </div>
 
         <!-- Main Info Card -->
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">募集要項</h2>
         <div class="bg-white border border-gray-300 p-8 rounded-lg shadow mb-10">
           <!-- Salary & Hours -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pb-8 border-b border-gray-300 mb-8">
