@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /.nuxt/
+Disallow: /dist/
+
+Sitemap: https://misato-taxi.jp/sitemap.xml
