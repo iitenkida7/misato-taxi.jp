@@ -23,6 +23,29 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'canonical', href: 'https://misato-taxi.jp/' },
     ],
+    script: [
+      {
+        type: 'application/ld+json',
+        innerHTML: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "三郷交通",
+          "image": "https://misato-taxi.jp/image/emblem.png",
+          "description": "埼玉県三郷市でタクシーサービスを提供しています。",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "埼玉県三郷市新和３－１４７",
+            "postalCode": "341-0034",
+            "addressLocality": "三郷市",
+            "addressRegion": "埼玉県",
+            "addressCountry": "JP"
+          },
+          "telephone": "048-952-3310",
+          "url": "https://misato-taxi.jp",
+          "sameAs": []
+        })
+      }
+    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

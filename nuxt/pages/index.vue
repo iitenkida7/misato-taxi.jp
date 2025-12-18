@@ -50,6 +50,23 @@ export default {
       ],
       link: [
         { rel: 'canonical', href: 'https://misato-taxi.jp/' }
+      ],
+      script: [
+        {
+          type: 'application/ld+json',
+          innerHTML: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ホーム",
+                "item": "https://misato-taxi.jp"
+              }
+            ]
+          })
+        }
       ]
     }
   }
