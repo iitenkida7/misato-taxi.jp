@@ -58,7 +58,7 @@ export default {
       script: [
         {
           type: 'application/ld+json',
-          innerHTML: JSON.stringify({
+          json: {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
@@ -66,10 +66,10 @@ export default {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "ホーム",
-                "item": "https://misato-taxi.jp"
+                "item": "https://misato-taxi.jp/"
               }
             ]
-          })
+          }
         }
       ]
     }

@@ -26,7 +26,7 @@ export default {
     script: [
       {
         type: 'application/ld+json',
-        innerHTML: JSON.stringify({
+        json: {
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
           "name": "三郷交通",
@@ -41,9 +41,9 @@ export default {
             "addressCountry": "JP"
           },
           "telephone": "048-952-3310",
-          "url": "https://misato-taxi.jp",
+          "url": "https://misato-taxi.jp/",
           "sameAs": []
-        })
+        }
       }
     ]
   },
