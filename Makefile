@@ -10,7 +10,6 @@ down:
 	docker compose down
 
 install:
-	docker compose build
 	docker compose run --rm bun bun install
 
 logs:
