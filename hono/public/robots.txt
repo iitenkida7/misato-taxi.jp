@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://misato-taxi.jp/sitemap.xml
