@@ -47,13 +47,14 @@ CSS のリンクは環境で切替（[hono/src/index.tsx](hono/src/index.tsx)）
 Bun はこの環境にネイティブ導入していない。**必ず Docker（`oven/bun`）経由**で動かす。
 
 ```
-make install   # docker compose build + bun install
-make up        # http://localhost:3000 （Vite dev, HMR）
+make install   # bun install（コンテナ内。node_modules は ./hono に作られる）
+make up         # http://localhost:3000 （Vite dev, HMR）
 make down
 make generate  # dist/ を生成（= bun run build）
 make logs
 ```
 
+- Dockerfile は無し。[compose.yml](compose.yml) が `image: oven/bun:1.4` を直接使い、`working_dir`/`command`/`ports` を指定するだけ
 - dev サーバは port **3000**（`vite.config.ts` で `server.host:true, port:3000`）
 - 直接叩く例: `docker run --rm -u 0 -v "$PWD/hono":/app oven/bun:1.4 sh -c "bun install && bun run build"`
 
