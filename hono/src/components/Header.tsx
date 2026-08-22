@@ -1,3 +1,5 @@
+import { paths } from '../links'
+
 export const Header = () => (
   <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-900">
     <div class="max-w-7xl mx-auto px-4">
@@ -9,10 +11,10 @@ export const Header = () => (
           <a class="text-white hover:bg-gray-700 px-3 py-2 rounded" href="/">
             トップページ
           </a>
-          <a class="text-white hover:bg-gray-700 px-3 py-2 rounded" href="/ir">
+          <a class="text-white hover:bg-gray-700 px-3 py-2 rounded" href={paths.ir}>
             会社概要
           </a>
-          <a class="text-white hover:bg-gray-700 px-3 py-2 rounded" href="/recruit">
+          <a class="text-white hover:bg-gray-700 px-3 py-2 rounded" href={paths.recruit}>
             求人
           </a>
           <a
@@ -46,10 +48,10 @@ export const Header = () => (
         <a class="block text-white hover:bg-gray-700 px-3 py-2 rounded" href="/">
           トップページ
         </a>
-        <a class="block text-white hover:bg-gray-700 px-3 py-2 rounded" href="/ir">
+        <a class="block text-white hover:bg-gray-700 px-3 py-2 rounded" href={paths.ir}>
           会社概要
         </a>
-        <a class="block text-white hover:bg-gray-700 px-3 py-2 rounded" href="/recruit">
+        <a class="block text-white hover:bg-gray-700 px-3 py-2 rounded" href={paths.recruit}>
           求人
         </a>
         <a

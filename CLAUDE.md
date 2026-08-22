@@ -25,20 +25,20 @@ hono/
       TelButton.tsx      # 電話CTAボタン
     pages/
       Home.tsx / Recruit.tsx / Ir.tsx
-  scripts/postbuild.ts   # フラットHTML → ディレクトリ形式へ整形
+    links.ts             # 内部リンクのパス（本番は .html、dev はクリーン）を環境で切替
   public/                # そのまま dist/ にコピーされる静的資産（favicon, robots.txt, image/*）
   vite.config.ts
 ```
 
 ## ビルド
 
-`bun run build` は3段階（[hono/package.json](hono/package.json)）:
+`bun run build` は2段階（[hono/package.json](hono/package.json)）:
 
-1. `vite build` — SSG。`/` `/recruit` `/ir` を HTML 化（この時点では `recruit.html` のようにフラット）
+1. `vite build` — SSG。`/` `/recruit` `/ir` をフラットな `index.html` / `recruit.html` / `ir.html` に出力
 2. `vite build --mode client` — Tailwind CSS を `dist/static/style.css` に出力（`emptyOutDir:false` でHTMLを消さない）
-3. `bun run scripts/postbuild.ts` — `recruit.html` → `recruit/index.html` に変換
 
-**postbuild が必須な理由**: @hono/vite-ssg はフラットな `*.html` を吐くが、本番 S3 + CloudFront は `recruit/index.html`（ディレクトリ形式）で `/recruit` を配信している。旧 Nuxt の生成物と同じ構造に揃えることで、インフラ側の設定を一切変えずに動く。出力構造を変えるとURLが壊れるので注意。
+**URL とファイル構成の注意（重要）**: 本番の S3 は REST オリジン + CloudFront で、拡張子なし/末尾スラッシュのパス（`/ir`, `/ir/`）を `ir/index.html` に解決する書き換えが無く **`/ir` は 403** になる（`/` だけは Default Root Object で index.html を返す）。そのため**フラットな `ir.html` を出力し、実URLを `/ir.html`** とする。内部リンクは [hono/src/links.ts](hono/src/links.ts) で本番 `.html` / dev クリーン(`/ir`) を切り替え、canonical も `/ir.html`。
+将来クリーンURL(`/ir`)に戻すなら、CloudFront Function（viewer-request で `index.html` を補完）を distribution に付けたうえで、ディレクトリ形式出力（`ir/index.html`）へ戻す。
 
 CSS のリンクは環境で切替（[hono/src/index.tsx](hono/src/index.tsx)）: 本番 `/static/style.css` / dev `/src/style.css`。
 
@@ -69,7 +69,8 @@ make logs
 
 1. `src/pages/Foo.tsx` を作成
 2. `src/index.tsx` に `app.get('/foo', (c) => c.render(<Foo/>, { title, description, canonical }))` を追加
-3. `bun run build` → SSGが自動でルートを検出、postbuild が `foo/index.html` を生成
+3. リンクを張るなら [hono/src/links.ts](hono/src/links.ts) に `foo` パスを追加（本番 `.html` / dev クリーンの切替に乗せる）
+4. `bun run build` → SSGが自動でルートを検出し `foo.html` を出力（実URLは `/foo.html`）
 
 ## デプロイ（現行踏襲）
 
@@ -82,3 +83,4 @@ make logs
 - **ブランチ**: GitHub の既定ブランチは古い `master`。**本番/デプロイ対象は `main`**（`master` より先行）。PR は `main` をベースに作る
 - ⚠️ **`main` へのマージ = 本番S3へ自動デプロイ**。マージ時は本番反映される前提で
 - `bun.lock` はコミットする（CI が `--frozen-lockfile` で使う）。`hono/node_modules` `hono/dist` は gitignore
+- **CloudFront はクリーンURLを書き換えない**: `/ir` は 403、実配信は `/ir.html`（上記「ビルド」参照）。`/` のみ Default Root Object で解決。デプロイは `--delete` 同期なので、旧構造のオブジェクトは自動削除される

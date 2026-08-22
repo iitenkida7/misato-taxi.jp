@@ -1,4 +1,5 @@
 import { TelButton } from '../components/TelButton'
+import { paths } from '../links'
 
 export const Home = () => (
   <main role="main" class="pt-20 px-4 pb-8">
@@ -41,7 +42,7 @@ export const Home = () => (
           <div class="text-center mt-6">
             <a
               class="text-blue-600 hover:text-blue-800 underline font-bold text-lg"
-              href="/recruit"
+              href={paths.recruit}
             >
               未経験OK！タクシードライバー募集中
             </a>

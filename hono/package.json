@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && vite build --mode client && bun run scripts/postbuild.ts",
+    "build": "vite build && vite build --mode client",
     "preview": "vite preview"
   },
   "dependencies": {
